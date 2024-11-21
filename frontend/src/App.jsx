@@ -20,7 +20,7 @@ const App = () => {
       }
 
       // Send POST request to the backend API
-      const response = await axios.post('http://localhost:8000/bfhl', {
+      const response = await axios.post('https://bajaj1-ruddy.vercel.app/bfhl', {
         data: parsedData.data,  // Corrected to use parsedData
         file_b64: ''  // Add the base64 file data if needed, else leave it empty
       });
